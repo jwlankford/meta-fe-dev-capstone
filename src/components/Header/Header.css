@@ -30,8 +30,6 @@
     padding-inline-start: 0;
     list-style-type: none;
     transition: left 0.3s;
-    align-items: center;
-    justify-content: flex-end;
   }
 
   .nav-bar-links.expanded {
