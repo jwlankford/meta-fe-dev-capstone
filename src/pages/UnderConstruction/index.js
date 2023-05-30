@@ -5,8 +5,8 @@ import './index.css';
 const UnderConstruction = () => {
   return (
     <div className="container under-construction">
-      <FontAwesomeIcon icon={faPersonDigging} size="3x" />
-      <h2>Page under construction</h2>
+      <FontAwesomeIcon icon={faPersonDigging} size="5x" />
+      <h2>Oops... This Page is Coming Soon!!!</h2>
     </div>
   );
 };

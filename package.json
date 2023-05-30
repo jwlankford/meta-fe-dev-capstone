@@ -2,7 +2,7 @@
   "name": "jl-meta-fe-dev-capstone",
   "version": "8.0.0",
   "private": true,
-  "homepage": "httpsL//github.com/jwlankford/jl-meta-fe-dev-capstone",
+  "homepage": "https://github.com/jwlankford/jl-meta-fe-dev-capstone",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
