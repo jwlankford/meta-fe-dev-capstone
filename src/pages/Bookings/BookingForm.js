@@ -17,6 +17,8 @@ const BookingForm = ({
   const invalidNumberOfGuestsErrorMessage = 
     'Please enter a number between 1 and 10';
 
+  const [phone] = useState('');
+  const [email] = useState('sample@email.com');
   const [date, setDate] = useState(minimumDate);
   const [time, setTime] = useState(defaultTime);
   const [
@@ -45,11 +47,29 @@ const BookingForm = ({
 
   const handleFormSubmit = e => {
     e.preventDefault();
-    submitData({ date, time, numberOfGuests, occasion, });
+    submitData({ phone, email, date, time, numberOfGuests, occasion, });
   };
 
   return (
     <form onSubmit={handleFormSubmit}>
+      <FormField label="Contact Phone">
+        <input 
+          type="text" 
+          id="booking-phone" 
+          name="booking-phone" 
+          value={phone}
+        />
+      </FormField>
+      <FormField label="Contact Email">
+        <input 
+          type="email" 
+          id="booking-email" 
+          name="booking-email" 
+          value={email} 
+          required={true} 
+        />
+      </FormField>
+
       <FormField 
         label="Date" 
         htmlFor="booking-date" 
